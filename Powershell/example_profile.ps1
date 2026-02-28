@@ -13,7 +13,8 @@ Write-host -ForegroundColor DarkCyan "*********************************"
 Write-host -ForegroundColor Cyan "Loading: Oh My Posh"
 
 $exTime = Measure-Command {
-    oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/ChrisTekk/ChrisTekk_Config/refs/heads/main/Powershell/CTv3_amro.omp.json' | Invoke-Expression
+    oh-my-posh init pwsh --config '~\Documents\PowerShell\Helpers\CTv3_amro.omp.json' | Invoke-Expression
+    # oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/ChrisTekk/ChrisTekk_Config/main/Powershell/CTv3_amro.omp.json' | Invoke-Expression
 }
 Write-host "$([int]$exTime.TotalMilliseconds) ms"
 
