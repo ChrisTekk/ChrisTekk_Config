@@ -23,6 +23,13 @@
           "type": "time"
         },
         {
+          "type": "python",
+          "style": "diamond",
+          "foreground": "#073642",
+          "background": "#b58900",
+          "template": "<transparent,#b58900>\ue0b0</> \uE235 {{ .Full }} {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }}{{ end }}{{ end }} <transparent,#b58900>\ue0d7</>"
+        },
+        {
           "background": "#073642",
           "foreground": "#2AA198",
           "foreground_templates": [
